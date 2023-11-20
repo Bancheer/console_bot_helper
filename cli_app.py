@@ -23,7 +23,8 @@ def error_handler(func):
 
 def hello_handler():
     return 'Hello, how I can help you?'
-
+    
+@error_handler
 def add(parameters):
     name, phone = parameters.split()
     contacts[name] = phone
